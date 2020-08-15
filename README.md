@@ -108,6 +108,11 @@ Rental data connects with community data through FSA. To handle this ``many-many
 
 <img src="Images/ERD.png" alt="ERD" width="800"/>
 
+### DB & Schema
+We have used PostgreSQL DB to load the data with [this schema]()
+SQL Alchemy is used to load the data to the corresponding tables. Code [here](Code/SQL_Load.ipynb)
+All the tables have established desired Foreign key relationships as shown in ERD.
+
 
 ---
 
