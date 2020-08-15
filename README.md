@@ -1,5 +1,10 @@
 # Toronto Rental ETL Project
 <img src="Toronto_Rental_ETL_Project/Images/toronto.jpg" alt="Headline" width="1000"/>
+
+While Toronto is a beautiful place to live, no one would claim it is easy to find a place to rent in Toronto. To help current and potenial Toronto residents better understand rental options available to them, we create a database containing the most recent rental listings as well other indicators of it what might be like to live at each address. 
+
+The following outlines the process for extracting, tranforming and loading data into the database. 
+
 <h2>Extract</h2>
 <hr>
 
@@ -26,13 +31,13 @@ Crimes are tracked in a number of categories and availabe in consolidated datase
 
 The website is dynamic, meaning it needs to be interacted with inorder for the data of interest to be accessed from back-end server then displayed on the webpage. 
 
-The Selenium and BeautifulSoup libraries were used to interact with and extract the data table rows(see PATH TO "Community_Assets.ipynb"). 
+The Selenium and BeautifulSoup libraries were used to interact with and extract the data table rows (see PATH TO "Community_Assets.ipynb"). 
 
 The webpage provides access to different tables via drop-down menu. Selenium's Select function was used to move between tables. 
 
 The static HTML only contains a subset of the data tables rows at a given time. In order to access all the data rows, the code iteratively scrolls through the data tables and scrapes the staic HTML. Scrolling was achieved by the last row in the static HTML and clicking on it via Selenium's click() function. This triggered teh Javascript to view that row as the beginning of new top row thus updating the staic HTML.    
 
-<h4>Statistics Canada Census Data</h4>
+<h4>Government of Canada 2015 Income Data</h4>
 
 <hr>
 <p>INTRO<p>
@@ -59,7 +64,7 @@ The static HTML only contains a subset of the data tables rows at a given time. 
 
 Further transformations then included removing rows without postal information; normalizing how fees for services are described; and updating headers to reflect best practices for SQL databases<p>
 
-<h4>Statistics Canada Census Data</h4>
+<h4>Government of Canada 2015 Income Data</h4>
 
 <hr>
 <p>INTRO<p>
