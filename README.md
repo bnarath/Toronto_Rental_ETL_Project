@@ -80,7 +80,7 @@ Further transformations then included removing rows without postal information; 
 <h2>Load</h2>
 <hr>
 <p>INTRO<p>
-<img src="Images/ERD.jpg" alt="ERD" width="600"/>
+<img src="Images/ERD.png" alt="ERD" width="600"/>
 
 <h2>Next Step</h2>
 <hr>
