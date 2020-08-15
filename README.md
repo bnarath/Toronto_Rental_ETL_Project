@@ -73,7 +73,7 @@ Further transformations then included removing rows without postal information; 
 <h2>Load</h2>
 <hr>
 <p>INTRO<p>
-<img src="Toronto_Rental_ETL_Project/Images/ERD.jpg" alt="ERD" width="1000"/>
+<img src="Toronto_Rental_ETL_Project/Images/ERD.png" alt="ERD" width="1000"/>
 
 
 
