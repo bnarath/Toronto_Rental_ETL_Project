@@ -5,7 +5,7 @@ While Toronto is a beautiful place to live, no one would claim it is easy to fin
 
 The following outlines the process for extracting, tranforming and loading data into the database. 
 
----
+<br>
 
 <br>
 
@@ -54,7 +54,7 @@ The static HTML only contains a subset of the data tables rows at a given time. 
 
 A CSV file was downloaded from <a href="https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/income-statistics-gst-hst-statistics/individual-tax-statistics-fsa/individual-tax-statistics-fsa-2017-edition-2015-tax-year.html#toc9">the Government of Canada website</a> containing Individual 2015 tax statistics by forward sortable areas (FSA). FSA are the first three digits of a postal code. The Pandas library was used to read the file into a dataframe for transformation. [See Code.](Code/pandas_reading_files.ipynb)
 
----
+<br>
 
 <br>
 
