@@ -1,8 +1,7 @@
 #Custom
 config.py
-extra_code
-mission_to_mars_selenium_version.ipynb
-scrape_mars_selenium_vn.py
+*.pkl
+*.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
