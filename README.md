@@ -10,11 +10,12 @@ The following outlines the process for extracting, tranforming and loading data 
 
 <h4>Rental Data</h4>
 
-<p>INTRO<p>
+<p>Two sources were used to extract rental listing data - Craigslist and Kijiji.<p>
+  
 <h5>Craigslist</h5>
 <p>Description<p>
 
-<h5>kijji</h5>
+<h5>Kijji</h5>
 
 <p>Kijiji provides rental information that includes apartment features such as apartment location and cost.
 
@@ -24,7 +25,7 @@ Kijiji provides rental information that includes apartment features such as apar
 
 <h4>Toronto Police Services Open Data</h4>
 
-<p>INTRO <p>
+<p>Two sources of data were extract from Toronto Police Services - major crime indicators and community services. <p>
 
 <h5>Major Crime Indicators</h5>
 <p>Toronto Police Services provides a <a href="https://data.torontopolice.on.ca/pages/catalogue">catalogue of data sources</a> that includes incidence of crime.
@@ -52,11 +53,10 @@ The static HTML only contains a subset of the data tables rows at a given time. 
 
 <h4>Rental Data</h4>
 
-<p>INTRO<p>
 <h5>Craigslist</h5>
 <p>Description<p>
 
-<h5>kijji</h5>
+<h5>Kijji</h5>
 
 <p>A list of urls was created by scrapping the main rentals webpage. Using these urls we extracted apartment features from each apartment url creating a DataFrame for the rental_kijiji_table.
 
@@ -64,7 +64,6 @@ Further transformations then included removing extra columns, extracting columns
 
 <h4>Toronto Police Services Open Data</h4>
 
-<p>INTRO<p>
 <h5>Major Crime Indicators</h5>
 <p>Description<p>
   
@@ -79,7 +78,7 @@ Further transformations then included removing rows without postal information; 
 
 <h2>Load</h2>
 <hr>
-<p>INTRO<p>
+<p>TEXT<p>
 <img src="Images/ERD.png" alt="ERD" width="800"/>
 
 <h2>Next Step</h2>
