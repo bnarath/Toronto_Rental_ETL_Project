@@ -13,7 +13,7 @@ The following outlines the process for extracting, tranforming and loading data 
 <p>Two sources were used to extract rental listing data - Craigslist and Kijiji.<p>
   
 <h5>Craigslist</h5>
-<p>We used [craigslist python module](https://pypi.org/project/python-craigslist/) to extract the url to the posts, and then scraped the posts using [selenium](https://selenium-python.readthedocs.io/)<p>
+<p>We used (craigslist python module)[https://pypi.org/project/python-craigslist/] to extract the url to the posts, and then scraped the posts using (selenium)[https://selenium-python.readthedocs.io/]. Please refer the [code](Code/craigslist_and_crime_api_scraping_transform.ipynb)<p>
 
 <h5>Kijji</h5>
 
@@ -21,14 +21,14 @@ The following outlines the process for extracting, tranforming and loading data 
 
 Rentals fall into three main categories: Long term rentals, Short term rentals , Rooms and Roommates rental. The Kijiji website is not dynamic and quite easy to scrape. A simple url request along with BeautifulSoup library was used for the data scrapping.
 
-Kijiji provides rental information that includes apartment features such as apartment location and cost (See Code/kijiji_api_scraping_transform).</p>
+Kijiji provides rental information that includes apartment features such as apartment location and cost [See Code.](Code/kijiji_api_scraping_transform)</p>
 
 <h4>Toronto Police Services Open Data</h4>
 
 <p>Two sources of data were extract from Toronto Police Services - major crime indicators and community services. <p>
 
 <h5>Major Crime Indicators</h5>
-<p>Toronto Police Services (TPS) provides a <a href="https://data.torontopolice.on.ca/pages/catalogue">catalogue of data sources</a> that includes incidence of crime. Crimes are tracked in a number of categories and availabe in consolidated dataset - Major Crime Indicators (MCI). TPS provides an <a href="https://data.torontopolice.on.ca/datasets/mci-metadata/geoservice">API</a> to easily access the MCI. We have made use of this API call and merged with homicide data available on the TPS website. Please refer the [code]()
+<p>Toronto Police Services (TPS) provides a <a href="https://data.torontopolice.on.ca/pages/catalogue">catalogue of data sources</a> that includes incidence of crime. Crimes are tracked in a number of categories and availabe in consolidated dataset - Major Crime Indicators (MCI). TPS provides an <a href="https://data.torontopolice.on.ca/datasets/mci-metadata/geoservice">API</a> to easily access the MCI. We have made use of this API call and merged with homicide data available on the TPS website. Please refer the [code](Code/craigslist_and_crime_api_scraping_transform.ipynb)
 
 <p>
 <h5>Community Assets</h5>
@@ -46,7 +46,7 @@ The static HTML only contains a subset of the data tables rows at a given time. 
 
 <p> A CSV file was downloaded from <ahref="https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/income-statistics-gst-hst-statistics/individual-tax-statistics-fsa/individual-tax-statistics-fsa-2017-edition-2015-tax-year.html#toc9">the Government of Canada website</a> containing Individual 2015 tax statistics by forward sortable areas (FSA). FSA are the first three digits of a postal code. The Pandas library was used to read the file into a dataframe for transformation (See Code/pandas_reading_files).<p>
 
-<h2> Extract</h2>
+<h2>Transform</h2>
 <hr>
 
 <h4>Rental Data</h4>
