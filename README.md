@@ -1,2 +1,18 @@
-# Toronto_Rental_ETL_Project
-ETL project pertaining to the rental data in Toronto
+# Toronto Rental ETL Project
+
+<h2> Extract</h2>
+<hr>
+<h4>Rental Data</h4>
+<p>INTRO<p>
+<h5>Craigslist</h5>
+<p>Description<p>
+<h5>kijji</h5>
+<p>Description<p>
+<h4>Toronto Police Services Open Data</h4>
+<hr>
+<p>INTRO<p>
+<h5>Major Crime Indicators</h5>
+<p>Description<p>
+<h5>Community Assets</h5>
+<p>Description<p>
+
