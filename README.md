@@ -98,7 +98,16 @@ Further transformations then included removing rows without postal information; 
 
 ## Load
 
+### Connection Logic:
+
+#### Connecting the Rental and Crime Table
+This was a ``challenging task`` as there was no postal code in crime data to connect the with the rental data, but there was geocode. Though the geocodes alone could not be connected directly, ``We built a logic around the geocode and created a bridge table. This bridge table connects the rental postings to all crime events that happened within 3kms radius in the last 1 year``. To measure the distance between two locations, we use ``haversine distance``. This resulted in a bridge table of ``1.4 Million rows``. Though this method has a lot of advantage (For instance, user can check crime data at any granularity within 3 km) compared to using the static postal codes, we plan to migrate to postal code logic to reduce growing the table size.
+
+#### Connecting the Rental to Community through Income
+Rental data connects with community data through FSA. To handle this ``many-many`` relationship, we have used the Income table which has unique FSA codes connecting to both the tables.
+
 <img src="Images/ERD.png" alt="ERD" width="800"/>
+
 
 ---
 
