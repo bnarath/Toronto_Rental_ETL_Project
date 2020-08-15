@@ -5,19 +5,21 @@ While Toronto is a beautiful place to live, no one would claim it is easy to fin
 
 The following outlines the process for extracting, tranforming and loading data into the database. 
 
-<h2>Extract</h2>
-<hr>
+## Extract
+--
+--
 
-<h4>Rental Data</h4>
+### Rental Data
 
-<p>Two sources were used to extract rental listing data - Craigslist and Kijiji.<p>
+Two sources were used to extract rental listing data - Craigslist and Kijiji.
   
-<h5>Craigslist</h5>
-We used [craigslist python module](https://pypi.org/project/python-craigslist/) to extract the url to the posts, and then scraped the posts using [selenium.](https://selenium-python.readthedocs.io/) Please refer the [code](Code/craigslist_and_crime_api_scraping_transform.ipynb)
+#### Craigslist
 
-<h5>Kijji</h5>
+Craigslist provides a well structured [URL](https://toronto.craigslist.org/search/hhh) to scrape rental posting data based on an area (Eg:- Toronto) and site (Eg:- Downtown Toronto). We used [craigslist python module](https://pypi.org/project/python-craigslist/) to extract all the direct URLs to the posts in the Toronto area and then scraped the posts using CSS selectors in [selenium.](https://selenium-python.readthedocs.io/) Please refer the [code](Code/craigslist_and_crime_api_scraping_transform.ipynb)
 
-<p>Kijiji provides rental information that includes apartment features such as apartment location and cost.
+#### Kijji
+
+Kijiji provides rental information that includes apartment features such as apartment location and cost.
 
 Rentals fall into three main categories: Long term rentals, Short term rentals , Rooms and Roommates rental. The Kijiji website is not dynamic and quite easy to scrape. A simple url request along with BeautifulSoup library was used for the data scrapping.
 
