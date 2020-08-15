@@ -39,17 +39,17 @@ The TPS data catalogue includes <a href="https://torontops.maps.arcgis.com/home/
 
 The website is dynamic, meaning it needs to be interacted with in order for the data of interest to be accessed from back-end server then displayed on the webpage. 
 
-The Selenium and BeautifulSoup libraries were used to interact with and extract the data table rows (See Code/Community_assets/Community_Assets). 
+The Selenium and BeautifulSoup libraries were used to interact with and extract the data table rows [See Code](Code/Community_assets/Community_Assets). 
 
 The webpage provides access to different tables via drop-down menu. Selenium's Select function was used to move between tables. 
 
 The static HTML only contains a subset of the data tables rows at a given time. In order to access all the data rows, the code iteratively scrolls through the data tables and scrapes the static HTML. Scrolling was achieved identifying the last row in the static HTML and clicking on it via Selenium's click() function. This triggered the webpage's Javascript to view that row as the new top row in the table thus triggering it to update the static HTML.    
 
-<h4>Government of Canada 2015 Income Data</h4>
+#### Government of Canada 2015 Income Data
 
-<p> A CSV file was downloaded from <ahref="https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/income-statistics-gst-hst-statistics/individual-tax-statistics-fsa/individual-tax-statistics-fsa-2017-edition-2015-tax-year.html#toc9">the Government of Canada website</a> containing Individual 2015 tax statistics by forward sortable areas (FSA). FSA are the first three digits of a postal code. The Pandas library was used to read the file into a dataframe for transformation (See Code/pandas_reading_files).<p>
+A CSV file was downloaded from <a href="https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/income-statistics-gst-hst-statistics/individual-tax-statistics-fsa/individual-tax-statistics-fsa-2017-edition-2015-tax-year.html#toc9">the Government of Canada website</a> containing Individual 2015 tax statistics by forward sortable areas (FSA). FSA are the first three digits of a postal code. The Pandas library was used to read the file into a dataframe for transformation. [See Code.](Code/pandas_reading_files.ipynb)
 
-<h2>Transform</h2>
+## Transform
 <hr>
 
 <h4>Rental Data</h4>
