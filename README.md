@@ -39,7 +39,7 @@ The static HTML only contains a subset of the data tables rows at a given time. 
 
 <h4>Government of Canada 2015 Income Data</h4>
 
-<p> A CSV file was downloaded from <ahref="https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/income-statistics-gst-hst-statistics/individual-tax-statistics-fsa/individual-tax-statistics-fsa-2017-edition-2015-tax-year.html#toc9">the Government of Canada website</a> containing Individual 2015 tax statistics by forward sortable areas (FSA). FSA are the first three digits of postal cosThe Pandas library was used to read the file into a dataframe for transformation.<p>
+<p> A CSV file was downloaded from <ahref="https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/income-statistics-gst-hst-statistics/individual-tax-statistics-fsa/individual-tax-statistics-fsa-2017-edition-2015-tax-year.html#toc9">the Government of Canada website</a> containing Individual 2015 tax statistics by forward sortable areas (FSA). FSA are the first three digits of a postal code. The Pandas library was used to read the file into a dataframe for transformation.<p>
 
 <h2> Extract</h2>
 <hr>
