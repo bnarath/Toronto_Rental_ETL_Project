@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Custom
 rentalDataChanges.docx
 config.py
@@ -133,3 +134,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+=======
+
+TPS/.ipynb_checkpoints/Community Assets-checkpoint.ipynb
+>>>>>>> be5381a5d95a99199725c5d5a80a04a89eeb858d
