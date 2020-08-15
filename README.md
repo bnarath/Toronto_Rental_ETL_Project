@@ -1,5 +1,5 @@
 # Toronto Rental ETL Project
-
+<img src="Toronto_Rental_ETL_Project/Images/toronto.jpg" alt="Headline" width="1000"/>
 <h2> Extract</h2>
 <hr>
 <h4>Rental Data</h4>
