@@ -53,10 +53,16 @@ A CSV file was downloaded from <a href="https://www.canada.ca/en/revenue-agency/
 
 ## ``Transform``
 
-### Rental Data
+### ``Rental Data``
 
-#### Craigslist
-Description
+#### ``Craigslist``
+One of the ``challenges`` with craigslist data was that it doesn't have a structure in the post. A user could write the rental features the way he/she pleases. We used ``excessive use of regular expressions to extract meaningful attributes`` like square feet, type of the house, no. of bedrooms, no.of bathrooms etc. 
+
+Apart from the regular cleaning process,
+This data had some null values for the location. As, we had to use the location to connect with the crime data, we retrieved the lat, long locations based from address using ``google geocode API``
+
+Similarly, wherever the geotag(lat, long) was present and not address, we retrieved the postal code using ``google's reverse geocode API``. The postcode was later converted to FSA(first 3 digits of the postal code) and used to connect to community and Income data. Please refer the [code.](Code/craigslist_and_crime_api_scraping_transform.ipynb)
+
 
 #### Kijji
 
@@ -67,7 +73,7 @@ Further transformations then included removing extra columns, extracting columns
 ### Toronto Police Services Open Data
 
 #### Major Crime Indicators
-Description
+Please refer the [code.](Code/craigslist_and_crime_api_scraping_transform.ipynb)
   
 #### Community Assets
 <p>Each data table was transformed into a dataframe. Once duplicates were removed, the individual dataframes were incorporated into a master dataframe.
