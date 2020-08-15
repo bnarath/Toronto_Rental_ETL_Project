@@ -13,7 +13,7 @@ The following outlines the process for extracting, tranforming and loading data 
 <p>Two sources were used to extract rental listing data - Craigslist and Kijiji.<p>
   
 <h5>Craigslist</h5>
-<p>We used [craigslist python module](https://pypi.org/project/python-craigslist/) to extract the url to the posts, and then scraped the posts using [selenium](https://selenium-python.readthedocs.io/). Please refer the [code](Code/craigslist_and_crime_api_scraping_transform.ipynb)<p>
+We used [craigslist python module](https://pypi.org/project/python-craigslist/) to extract the url to the posts, and then scraped the posts using [selenium](https://selenium-python.readthedocs.io/). Please refer the [code](Code/craigslist_and_crime_api_scraping_transform.ipynb)
 <h5>Kijji</h5>
 
 <p>Kijiji provides rental information that includes apartment features such as apartment location and cost.
@@ -27,9 +27,9 @@ Kijiji provides rental information that includes apartment features such as apar
 <p>Two sources of data were extract from Toronto Police Services - major crime indicators and community services. <p>
 
 <h5>Major Crime Indicators</h5>
-<p>Toronto Police Services (TPS) provides a <a href="https://data.torontopolice.on.ca/pages/catalogue">catalogue of data sources</a> that includes incidence of crime. Crimes are tracked in a number of categories and availabe in consolidated dataset - Major Crime Indicators (MCI). TPS provides an <a href="https://data.torontopolice.on.ca/datasets/mci-metadata/geoservice">API</a> to easily access the MCI. We have made use of this API call and merged with homicide data available on the TPS website. Please refer the [code](Code/craigslist_and_crime_api_scraping_transform.ipynb)
+Toronto Police Services (TPS) provides a <a href="https://data.torontopolice.on.ca/pages/catalogue">catalogue of data sources</a> that includes incidence of crime. Crimes are tracked in a number of categories and availabe in consolidated dataset - Major Crime Indicators (MCI). TPS provides an <a href="https://data.torontopolice.on.ca/datasets/mci-metadata/geoservice">API</a> to easily access the MCI. We have made use of this API call and merged with homicide data available on the TPS website. Please refer the [code](Code/craigslist_and_crime_api_scraping_transform.ipynb)
 
-<p>
+
 <h5>Community Assets</h5>
 <p> The TPS data catalogue includes <a href="https://torontops.maps.arcgis.com/home/item.html?id=077c19d8628b44c7ab9f0fff75a55211&view=list&sortOrder=true&sortField=defaultFSOrder#data">data tables</a> identifying organizations providing services to Toronto communities. Unfortunately, this data source is not accessible via an API. Web scrapping was used to extract the community asset data.<p>
 
