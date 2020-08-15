@@ -13,11 +13,16 @@
 
 <h4>Toronto Police Services Open Data</h4>
 
-<p>INTRO<p>
+<p>INTRO <p>
+
 <h5>Major Crime Indicators</h5>
-<p>Description<p>
+<p>Toronto Police Services provides a <ahref="https://data.torontopolice.on.ca/pages/catalogue">catalogue of data sources</a> catalogue of data sources that includes incidence of crime.
+
+Crimes are tracked in a number of categories and availabe in consolidated dataset - Major Crime Indicators (MCI). TPS provides an <ahref="https://data.torontopolice.on.ca/datasets/mci-metadata/geoservice<">API</a> to easily access the MCI. 
+
+<p>
 <h5>Community Assets</h5>
-<p>Description<p>
+<p> The TPS data catalogue includes <ahref="https://torontops.maps.arcgis.com/home/item.html?id=077c19d8628b44c7ab9f0fff75a55211&view=list&sortOrder=true&sortField=defaultFSOrder#data">data tables</a> identifying organizations providing services to Toronto communities. Unfortunately, this data source is not accessible via an API. Web scrapping was used to extract the community asset data.<p>
 
 <h4>Statistics Canada Census Data</h4>
 
