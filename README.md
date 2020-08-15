@@ -5,9 +5,9 @@ While Toronto is a beautiful place to live, no one would claim it is easy to fin
 
 The following outlines the process for extracting, tranforming and loading data into the database. 
 
-## Extract
-
 ---
+
+## Extract
 
 ### ``Rental Data``
 
