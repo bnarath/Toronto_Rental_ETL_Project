@@ -7,7 +7,7 @@ The following outlines the process for extracting, tranforming and loading data 
 
 ## Extract
 
---
+---
 
 ### ``Rental Data``
 
