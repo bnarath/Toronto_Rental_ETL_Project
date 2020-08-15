@@ -3,7 +3,8 @@
 rentalDataChanges.docx
 config.py
 *.pkl
-*.csv
+Bridge_Rental_Crime_Craigslist.csv
+bridge_table_kijiji_final.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
