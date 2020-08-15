@@ -94,9 +94,11 @@ Further transformations then included removing rows without postal information; 
 
 <p> Rows for FSA outside of the City of Toronto (for which FSA begin with 'M') were removed from the dataframe.  Average income was calculated pre FSA by dividing “Total Income” by “Total” (population). </p>
 
----
+<br>
 
 ## Load
+
+<br>
 
 ### Connection Logic:
 
@@ -114,7 +116,7 @@ SQL Alchemy is used to load the data to the corresponding tables. Code [here.](C
 All the tables have established desired Foreign key relationships as shown in ERD.
 
 
----
+<br>
 
 ## Next Step
 - **Scan for other available sources of geographic data that can enrich database as indicators of what it is like to live at each rental location.**
