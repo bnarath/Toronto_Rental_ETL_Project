@@ -85,4 +85,4 @@ Further transformations then included removing rows without postal information; 
 <h2>Next Step</h2>
 <hr>
 <p> >Scan for other available sources of geographic data that can enrich database as indicators of what it is like to live at each rental location.
->Develop an application that scrapes rental listings in real-time.<p>
+<br>>Develop an application that scrapes rental listings in real-time.<p>
