@@ -13,8 +13,14 @@ The following outlines the process for extracting, tranforming and loading data 
 <p>INTRO<p>
 <h5>Craigslist</h5>
 <p>Description<p>
+
 <h5>kijji</h5>
-<p>Description<p>
+
+<p>Kijiji provides rental information that includes apartment features such as apartment location and cost.
+
+Rentals fall into three main categories: Long term rentals, Short term rentals , Rooms and Roommates rental. The Kijiji website is not dynamic and quite easy to scrape. A simple url request along with BeautifulSoup library was used for the data scrapping.
+
+Kijiji provides rental information that includes apartment features such as apartment location and cost (PATH TO CODE).</p>
 
 <h4>Toronto Police Services Open Data</h4>
 
@@ -49,8 +55,12 @@ The static HTML only contains a subset of the data tables rows at a given time. 
 <p>INTRO<p>
 <h5>Craigslist</h5>
 <p>Description<p>
+
 <h5>kijji</h5>
-<p>Description<p>
+
+<p>A list of urls was created by scrapping the main rentals webpage. Using these urls we extracted apartment features from each apartment url creating a DataFrame for the rental_kijiji_table.
+
+Further transformations then included removing extra columns, extracting columns such as FSA and postal codes from the address, removing rows without postal information; and updating headers to reflect best practices for SQL databases and be able to merge with Craigslist data.</p>
 
 <h4>Toronto Police Services Open Data</h4>
 
@@ -66,12 +76,13 @@ Further transformations then included removing rows without postal information; 
 <h4>Government of Canada 2015 Income Data</h4>
 
 <p> Rows for FSA outside of the City of Toronto (for which FSA begin with 'M') were removed from the dataframe.  Average income was calculated pre FSA by dividing “Total Income” by “Total”. (population)</p>
-  
-<hr>
-<p>INTRO<p>
 
 <h2>Load</h2>
 <hr>
 <p>INTRO<p>
 <img src="Toronto_Rental_ETL_Project/Images/ERD.jpg" alt="ERD" width="1000"/>
 
+<h2>Next Step</h2>
+<hr>
+<p> >Scan for other available sources of geographic data that can enrich database as indicators of what it is like to live at each rental location.
+>Develop an application that scrapes rental listings in real-time.<p>
