@@ -1,5 +1,5 @@
 # Toronto Rental ETL Project
-<img src="Toronto_Rental_ETL_Project/Images/toronto.jpg" alt="Headline" width="1000"/>
+<img src="Images/toronto.jpg" alt="Headline" width="1000"/>
 
 While Toronto is a beautiful place to live, no one would claim it is easy to find a place to rent in Toronto. To help current and potential Toronto residents better understand rental options available to them, we created a database containing the most recent rental listings as well other indicators of what it might be like to live at each address. 
 
@@ -73,7 +73,7 @@ Further transformations then included removing rows without postal information; 
 <h2>Load</h2>
 <hr>
 <p>INTRO<p>
-<img src="Toronto_Rental_ETL_Project/Images/ERD.png" alt="ERD" width="1000"/>
+<img src="Images/ERD.png" alt="ERD" width="1000"/>
 
 
 
