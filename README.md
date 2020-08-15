@@ -13,15 +13,14 @@ The following outlines the process for extracting, tranforming and loading data 
 <p>Two sources were used to extract rental listing data - Craigslist and Kijiji.<p>
   
 <h5>Craigslist</h5>
-<p>We used (craigslist python module)[https://pypi.org/project/python-craigslist/] to extract the url to the posts, and then scraped the posts using (selenium)[https://selenium-python.readthedocs.io/]. Please refer the [code](Code/craigslist_and_crime_api_scraping_transform.ipynb)<p>
-
+<p>We used [craigslist python module](https://pypi.org/project/python-craigslist/) to extract the url to the posts, and then scraped the posts using [selenium](https://selenium-python.readthedocs.io/). Please refer the [code](Code/craigslist_and_crime_api_scraping_transform.ipynb)<p>
 <h5>Kijji</h5>
 
 <p>Kijiji provides rental information that includes apartment features such as apartment location and cost.
 
 Rentals fall into three main categories: Long term rentals, Short term rentals , Rooms and Roommates rental. The Kijiji website is not dynamic and quite easy to scrape. A simple url request along with BeautifulSoup library was used for the data scrapping.
 
-Kijiji provides rental information that includes apartment features such as apartment location and cost [See Code.](Code/kijiji_api_scraping_transform)</p>
+Kijiji provides rental information that includes apartment features such as apartment location and cost [See Code.](Code/kijiji_api_scraping_transform.ipynb)</p>
 
 <h4>Toronto Police Services Open Data</h4>
 
