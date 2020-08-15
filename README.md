@@ -82,6 +82,7 @@ Further transformations then included removing extra columns, extracting columns
 ### Toronto Police Services Open Data
 
 #### Major Crime Indicators
+Apart from the regular cleaning, timestamps were converted to the iso format and only the last 1 year of crime data was taken into consideration for connecting with the rental data logically. As crime data has two sources, ``data from API`` and ``homicide CSV file``, both were transformed into a unique template.
 Please refer the [code.](Code/craigslist_and_crime_api_scraping_transform.ipynb)
   
 #### Community Assets
@@ -96,7 +97,7 @@ Further transformations then included removing rows without postal information; 
 ---
 
 ## Load
-<p>TEXT<p>
+
 <img src="Images/ERD.png" alt="ERD" width="800"/>
 
 ---
