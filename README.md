@@ -14,15 +14,15 @@ The following outlines the process for extracting, tranforming and loading data 
 <br>
 
 
-### ``Rental Data``
+### Rental Data
 
 Two sources were used to extract rental listing data - Craigslist and Kijiji.
   
-#### ``Craigslist``
+#### Craigslist
 
 Craigslist provides a well structured [URL](https://toronto.craigslist.org/search/hhh) to scrape rental posting data based on an area (Eg:- Toronto) and site (Eg:- Downtown Toronto). We used [craigslist python module](https://pypi.org/project/python-craigslist/) to extract all the direct URLs to the posts in the Toronto area and then scraped the posts using CSS selectors in [selenium.](https://selenium-python.readthedocs.io/) Please refer the [code.](Code/craigslist_and_crime_api_scraping_transform.ipynb)
 
-#### ``Kijji``
+#### Kijji
 
 Kijiji provides rental information that includes apartment features such as apartment location and cost.
 
@@ -30,16 +30,16 @@ Rentals fall into three main categories: Long term rentals, Short term rentals ,
 
 Kijiji provides rental information that includes apartment features such as apartment location and cost [See Code.](Code/kijiji_api_scraping_transform.ipynb)
 
-### ``Toronto Police Services Open Data``
+### Toronto Police Services Open Data
 
 Two sources of data were extract from Toronto Police Services - major crime indicators and community services.
 
-#### ``Major Crime Indicators``
+#### Major Crime Indicators
 Toronto Police Services (TPS) provides a <a href="https://data.torontopolice.on.ca/pages/catalogue">catalogue of data sources</a> that includes incidence of crime. Crimes are tracked in a number of categories and availabe in consolidated dataset - Major Crime Indicators (MCI). TPS provides an <a href="https://data.torontopolice.on.ca/datasets/mci-metadata/geoservice">API</a> to easily access the MCI. 
 We have made use of this API call and merged with homicide data available on the TPS website. Please refer the [code](Code/craigslist_and_crime_api_scraping_transform.ipynb)
 
 
-#### ``Community Assets``
+#### Community Assets
 The TPS data catalogue includes <a href="https://torontops.maps.arcgis.com/home/item.html?id=077c19d8628b44c7ab9f0fff75a55211&view=list&sortOrder=true&sortField=defaultFSOrder#data">data tables</a> identifying organizations providing services to Toronto communities. Unfortunately, this data source is not accessible via an API. Web scrapping was used to extract the community asset data.
 
 The website is dynamic, meaning it needs to be interacted with in order for the data of interest to be accessed from back-end server then displayed on the webpage. 
@@ -50,7 +50,7 @@ The webpage provides access to different tables via drop-down menu. Selenium's S
 
 The static HTML only contains a subset of the data tables rows at a given time. In order to access all the data rows, the code iteratively scrolls through the data tables and scrapes the static HTML. Scrolling was achieved identifying the last row in the static HTML and clicking on it via Selenium's click() function. This triggered the webpage's Javascript to view that row as the new top row in the table thus triggering it to update the static HTML.    
 
-### ``Government of Canada 2015 Income Data``
+### Government of Canada 2015 Income Data
 
 A CSV file was downloaded from <a href="https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/income-statistics-gst-hst-statistics/individual-tax-statistics-fsa/individual-tax-statistics-fsa-2017-edition-2015-tax-year.html#toc9">the Government of Canada website</a> containing Individual 2015 tax statistics by forward sortable areas (FSA). FSA are the first three digits of a postal code. The Pandas library was used to read the file into a dataframe for transformation. [See Code.](Code/pandas_reading_files.ipynb)
 
@@ -62,9 +62,9 @@ A CSV file was downloaded from <a href="https://www.canada.ca/en/revenue-agency/
 
 <br>
 
-### ``Rental Data``
+### Rental Data
 
-#### ``Craigslist``
+#### Craigslist
 One of the ``challenges`` with craigslist data was that it doesn't have a structure in the post. A user could write the rental features the way he/she pleases. We used ``excessive use of regular expressions to extract meaningful attributes`` like square feet, type of the house, no. of bedrooms, no.of bathrooms etc. 
 
 Apart from the regular cleaning process,
