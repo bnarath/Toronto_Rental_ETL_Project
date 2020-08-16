@@ -119,6 +119,22 @@ All the final data tables are [here](Output/) except the ones uploaded in the [g
 
 <br>
 
+## Flask App
+
+[Code base here]()
+We have made application with the following features
+ - A front page explaining about the project details
+ - Rental data API: To provide rental listings for a number provided by the user (by default 100)
+ - Community  data  services API: To provide community services for a number provided by the user (by default 100)
+ - Crime Data API: To list all the crimes for a specific crime type (Assault is by default)
+ - Income Data API: To list the average income for all FSA's in Toronto
+
+<img src="Images/rental.png" alt="rental" width="800"/>
+<img src="Images/community.png" alt="community" width="800"/>
+<img src="Images/crime.png" alt="crime" width="800"/>
+<img src="Images/income.png" alt="income" width="800"/>
+
+
 ## Next Step
 - **Scan for other available sources of geographic data that can enrich database as indicators of what it is like to live at each rental location.**
-- **Develop an application that scrapes the daily rental listings in real-time to show the data.**
+- **Improve the  application that we have made, to incorporate additional features  **
