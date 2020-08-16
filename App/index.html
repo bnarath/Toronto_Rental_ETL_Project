@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ETL Project</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <a class="navbar-brand text-white" href="#">Team Awesome</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="Data/extract.html">Extract <span class="sr-only">(current)</span></a>
+                 </li>
+                 <li class="nav-item ">
+                    <a class="nav-link" href="Data/transform.html">Transform <span class="sr-only">(current)</span></a>
+                 </li>
+                 <li class="nav-item ">
+                    <a class="nav-link" href="Data/load.html">Load <span class="sr-only">(current)</span></a>
+                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      API Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item  text-muted" href="cragslist.html">Rental Data</a>
+                        <a class="dropdown-item text-muted" href="kijiji.html">Crime Data</a>
+                        <a class="dropdown-item text-muted" href="tpl.html">Community Assets </a>
+                        <a class="dropdown-item text-muted" href="#">Income Data</a>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Code
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item  text-muted" href="https://github.com/bnarath/Toronto_Rental_ETL_Project/blob/master/Code/craigslist_and_crime_api_scraping_transform.ipynb" target=”_blank”>Cragslist</a>
+                      <a class="dropdown-item text-muted" href="https://github.com/bnarath/Toronto_Rental_ETL_Project/blob/master/Code/kijiji_api_scraping_transform.ipynb" target=”_blank”>Kijiji</a>
+                      <a class="dropdown-item text-muted" href="https://github.com/bnarath/Toronto_Rental_ETL_Project/blob/master/Code/craigslist_and_crime_api_scraping_transform.ipynb" target=”_blank”>Toronto Police Services</a>
+                      <a class="dropdown-item text-muted" href="https://github.com/bnarath/Toronto_Rental_ETL_Project/blob/master/Code/Community_assets/Community_Assets.ipynb" target=”_blank”>Community Assets</a>
+                      <a class="dropdown-item text-muted" href="https://github.com/bnarath/Toronto_Rental_ETL_Project/blob/master/Code/pandas_reading_files.ipynb" target=”_blank”>Income</a>
+                      
+                    </div>
+                  </li>
+                <!--<li class="nav-item ">
+                   <a class="nav-link" href="WebVisualizations/comparison.html">Comparison <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#">Data</a>
+                </li>-->
+                
+                
+              </ul>
+              
+            </div>
+        </nav>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">ETL Project</h1>
+              <p class="lead">In this project we extract transform and load the following Toronto datasets: <a href="https://toronto.craigslist.org/search/hhh">Cragslist Rentals Data</a>, <a href="https://www.kijiji.ca/b-apartments-condos/city-of-toronto/c37l1700273">Kijiji Rentals Data</a>, <a href="https://data.torontopolice.on.ca/pages/catalogue">Toronto Police Services Open Data</a> and <a href="https://torontops.maps.arcgis.com/home/item.html?id=077c19d8628b44c7ab9f0fff75a55211&view=list&sortOrder=true&sortField=defaultFSOrder#data">Community Assets Data</a> </p>
+
+            </div>
+          </div>
+        <div class="container">
+            <div class="card-deck">
+                <div class="card">
+                  <img src="Images/toronto.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Extract</h5>
+                    <p class="card-text">API calls and web scrapping are used to collect all the data from the different data sources. This data is stored for further manipulation.</p>
+                    <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="Images/toronto.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Transform</h5>
+                    <p class="card-text">Data is messy !!! Especialy when it comes from four different data sources. Transformations have to be applied to make records compatible with each other.
+                         Transformations are also applied to ensure correctness and create relationships between different tables.</p>
+                    <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="Images/ERD.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Load</h5>
+                    <p class="card-text">PostgreSQL was used to load and store this data. In the case of an SQL Database a Database schema is created first and then the data is loaded. If the data being loaded does not follow the schema there will be errors ....</p>
+                    <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+                  </div>
+                </div>
+              </div>
+                    
+                    
+            
+            
+                
+        </div>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              
+            <h1 class="display-4">Our Vision</h1>
+              <p class="lead">In this project we extract transform and load the following Toronto datasets: Cragslist Rentals Data, Kijiji Rentals Data, Toronto Police Services Open Data and Community Assets Data </p>
+              
+            <div class="card-deck">
+                <div class="card">
+                  <img src="Images/toronto.jpg" class="card-img-bottom" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Extract</h5>
+                    <p class="card-text">API calls and web scrapping are used to collect all the data from the different data sources. This data is stored for further manipulation.</p>
+                    <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="Images/toronto.jpg" class="card-img-bottom" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Transform</h5>
+                    <p class="card-text">Data is messy !!! Especialy when it comes from four different data sources. Transformations have to be applied to make records compatible with each other.
+                         Transformations are also applied to ensure correctness and create relationships between different tables.</p>
+                    <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="Images/ERD.png" class="card-img-bottom" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Load</h5>
+                    <p class="card-text">PostgreSQL was used to load and store this data. In the case of an SQL Database a Database schema is created first and then the data is loaded. If the data being loaded does not follow the schema there will be errors ....</p>
+                    <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="container">
+            <h1 class="display-4">Potential Users</h1>
+            <div class="card-deck">
+                <div class="card">
+                  <img src="Images/toronto.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Extract</h5>
+                    <p class="card-text">API calls and web scrapping are used to collect all the data from the different data sources. This data is stored for further manipulation.</p>
+                    <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="Images/toronto.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Transform</h5>
+                    <p class="card-text">Data is messy !!! Especialy when it comes from four different data sources. Transformations have to be applied to make records compatible with each other.
+                         Transformations are also applied to ensure correctness and create relationships between different tables.</p>
+                    <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="Images/ERD.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Load</h5>
+                    <p class="card-text">PostgreSQL was used to load and store this data. In the case of an SQL Database a Database schema is created first and then the data is loaded. If the data being loaded does not follow the schema there will be errors ....</p>
+                    <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+                  </div>
+                </div>
+            </div>
+                    
+                    
+            
+            
+           
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
+© 2020 GitHub, Inc.
