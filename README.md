@@ -35,7 +35,7 @@ Kijiji provides rental information that includes apartment features such as apar
 Two sources of data were extract from Toronto Police Services - major crime indicators and community services.
 
 #### Major Crime Indicators
-Toronto Police Services (TPS) provides a <a href="https://data.torontopolice.on.ca/pages/catalogue">catalogue of data sources</a> that includes incidence of crime. Crimes are tracked in a number of categories and availabe in consolidated dataset - Major Crime Indicators (MCI). TPS provides an <a href="https://data.torontopolice.on.ca/datasets/mci-metadata/geoservice">API</a> to easily access the MCI. 
+Toronto Police Services (TPS) provides a <a href="https://data.torontopolice.on.ca/pages/catalogue">catalogue of data sources</a> that includes incidence of crime. Crimes are tracked in a number of categories and available in consolidated dataset - Major Crime Indicators (MCI). TPS provides an <a href="https://data.torontopolice.on.ca/datasets/mci-metadata/geoservice">API</a> to easily access the MCI. 
 We have made use of this API call and merged with homicide data available on the TPS website. Please refer the [code](Code/craigslist_and_crime_api_scraping_transform.ipynb)
 
 
@@ -137,4 +137,4 @@ We have made application with the following features
 
 ## Next Step
 - **Scan for other available sources of geographic data that can enrich database as indicators of what it is like to live at each rental location.**
-- **Improve the  application that we have made, to incorporate additional features  **
+- **Improve the  application that we have made, to incorporate additional features**
