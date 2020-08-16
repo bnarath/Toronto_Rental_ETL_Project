@@ -121,7 +121,7 @@ All the final data tables are [here](Output/) except the ones uploaded in the [g
 
 ## Flask App
 
-[Code base here]()
+[Code base here](App/app.py)
 We have made application with the following features
  - A front page explaining about the project details
  - Rental data API: To provide rental listings for a number provided by the user (by default 100)
